@@ -5,19 +5,22 @@ const email = ['franco@gmail.com', 'franca@gmail.com', 'francesca@gmail.com', 'f
  const grandezza_array = email.length ;
  let mail_utente = (prompt('Inserisci un email'));
 
-
+ let puoi_accedere = false
  for(let i = 0; i < grandezza_array; i++) {
 	 alert(email[i] + "=" + mail_utente); 
   //	alert("i = " + i + "; email[i] = email[" + i + "]; -->" + email[i]);
   	if(email[i] == mail_utente) {
-    	alert("Email trovata"); 
-    }else {
-    alert("Email non trovata"); 
+        poui_accedere = true;
+     }
     
-    }
-
 }
 
+if ( poui_accedere == true){
+    alert("Email  trovata"); 
+    
+}else{
+    alert('pussa via');
+}
 
 
 
